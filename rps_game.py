@@ -46,13 +46,14 @@ def game():
                 comp_score+=1
                 print("u lost")  
                 
-        #def score_display():
+        # score display
         print("+"+ "-"*(len(player_name) + 13) + "+")
         print("| computer | "+ player_name + " |")
         print("|"+("-" * (len(player_name) + 13))+ "|")
         print("| " + str(comp_score) +(" " * 8)+"| "+ str(player_score) +(" " *(len(player_name)-1))+" |")
         print("+"+ "-"*(len(player_name) + 13) + "+")   
     
+    # finds winner 
     def winner():
         if player_score > comp_score:
             print("The winner is " + player_name)
